@@ -4,10 +4,12 @@ on: push
 
 jobs:
   hello_world_job:
-    runs-on: self-hosted
+    runs-on: wewelabel
     name: A job to say hello
     steps:
     - run: echo $HOSTNAME
+    - run: echo hostnamectl
+    - run: echo uname -r
     - name: Hello world action step
       id: hello
       uses: actions/hello-world-docker-action@main
