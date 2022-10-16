@@ -8,7 +8,7 @@ jobs:
     runs-on: acloudguruAAA2
     steps:
       - run: echo 'hello cloud gurus in runner-acloudguruAAA'
-      - run: nodejs -v
+      - run: mvn -v
       - run: npm -v
       - run: git -v
       - run: pip -v
