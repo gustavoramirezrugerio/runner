@@ -4,8 +4,8 @@ on: push
 
 jobs:
   init:
-    #runs-on: self-hosted
-    runs-on: acloudguruAAA
+    runs-on: self-hosted
+    #runs-on: acloudguruAAA
     steps:
       - run: echo 'hello cloud gurus in runner-acloudguruAAA'
       - run: echo $HOSTNAME
