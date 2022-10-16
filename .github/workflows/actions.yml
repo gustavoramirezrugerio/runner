@@ -1,10 +1,10 @@
-name: Must run on custom runner
+name: Must run on custom runner-acloudguruAAA
 
 on: push
 
 jobs:
   init:
-    runs-on: self-hosted
+    runs-on: acloudguruAAA
     steps:
       - run: echo 'hello cloud gurus'
       - run: echo $HOSTNAME

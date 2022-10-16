@@ -1,4 +1,4 @@
-name: Must run on custom runner
+name: Must run on custom runner-acloudguru
 
 on: push
 
