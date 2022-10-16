@@ -3,23 +3,15 @@ name: Must run on custom runner-acloudguruAAA
 on: push
 
 jobs:
-  build:
-    runs-on: acloudguruAAA2
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-      - name: Install libraries
-        run: |
-            python -v
-      - name: Create zip bundle
-        run: |
-            pip -v
-      - name: Archive artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: zipped-bundle
-          path: ${{ github.sha }}.zip
+    - name: Hello world action step
+      id: hello
+      uses: actions/hello-world-docker-action@v1
+      with:
+        who-to-greet: 'Mona the Octocat'
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
