@@ -10,6 +10,7 @@ jobs:
     - run: echo $HOSTNAME
     - run: hostnamectl
     - run: uname -r
+    - run: docker ps -a
     - name: Hello world action step
       id: hello
       uses: actions/hello-world-docker-action@main
