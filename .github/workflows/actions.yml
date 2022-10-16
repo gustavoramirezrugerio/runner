@@ -4,7 +4,7 @@ on: push
 
 jobs:
   hello_world_job:
-    runs-on: acloudguruAAA2
+    runs-on: acloudguru
     name: A job to say hello
     steps:
     - name: Hello world action step
