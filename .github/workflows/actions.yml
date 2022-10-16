@@ -8,8 +8,8 @@ jobs:
     name: A job to say hello
     steps:
     - run: echo $HOSTNAME
-    - run: echo hostnamectl
-    - run: echo uname -r
+    - run: hostnamectl
+    - run: uname -r
     - name: Hello world action step
       id: hello
       uses: actions/hello-world-docker-action@main
