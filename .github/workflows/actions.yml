@@ -9,4 +9,8 @@ jobs:
     steps:
       - run: echo 'hello cloud gurus in runner-acloudguruAAA'
       - run: echo $HOSTNAME
+      - run: echo $HOSTNAME
+      - run: echo $HOSTNAME
+      - run: echo $HOSTNAME
+      - run: echo $HOSTNAME
 
