@@ -8,9 +8,6 @@ jobs:
     runs-on: acloudguruAAA2
     steps:
       - run: echo 'hello cloud gurus in runner-acloudguruAAA'
-      - run: mvn -v
-      - run: npm -v
-      - run: git -v
-      - run: pip -v
+      - run: docker -v
       - run: echo $HOSTNAME
 
