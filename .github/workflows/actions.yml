@@ -16,7 +16,7 @@ jobs:
     - run: apt list --installed
     - run: dpkg -l
     - run: snap list
-    - run: flatpak list
+    #- run: flatpak list
 
     - name: Hello world action step
       id: hello
